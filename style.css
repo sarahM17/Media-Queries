@@ -1,0 +1,44 @@
+body {
+    background-color: red;
+    font-size: 10px;
+    display: table;
+}
+@media screen and (min-width : 0px) and (max-width : 300px){
+    #small, #medium, #large {
+        display: block;
+
+    }
+}
+@media screen and (min-width : 301px) and (max-width : 768px){
+    body {
+        background-color: green;
+        font-size: 20px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #small {
+        flex-flow: row;
+        width: 66%;
+    }
+    #medium {
+        flex-flow: row;
+        width: 33%;
+    }
+    #large {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+}
+@media screen and (min-width : 768px) {
+    body {
+        background-color: blue;
+        font-size: 30px;
+        display: flex;
+        direction: row;
+    }
+    #small, #medium, #large {
+        display: block;
+    }
+}
+
